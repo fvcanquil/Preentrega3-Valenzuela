@@ -6,15 +6,18 @@
 }
 
 /* Generales */
+
+
+
+
 .bg-black {
   background-color: #000;
   color: #fff;
 }
 
-
-footer a {
+.footer a {
   text-decoration: none;
-  color: #0b0101;
+  color: black;
   transition: color 0.3s ease-in-out;
   
   /*Hay que arreglar el color de cuando se pone el cursor que se ponga azul*/
@@ -77,7 +80,7 @@ footer a {
   grid-gap: 20px;
 }
 
-.main-img img {
+.main-img, img {
   width: 100%;
   height: auto;
   border-radius: 10px; 
@@ -215,3 +218,4 @@ footer a {
             width: auto; /* Botón de ancho completo */
             margin-top: 10px; /* Espaciado entre el botón y el textarea */
         }
+
