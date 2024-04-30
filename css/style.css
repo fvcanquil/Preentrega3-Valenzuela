@@ -7,7 +7,10 @@
 
 /* Generales */
 
-
+/*Para las imagenes */
+.img-fluid {
+  max-width: 100%;
+}
 
 
 .bg-black {
@@ -219,3 +222,16 @@
             margin-top: 10px; /* Espaciado entre el botón y el textarea */
         }
 
+/*Página de Simbolos*/
+
+.container h1 {
+  color: #fff;
+}
+
+.container p {
+  color: #fff;
+}
+
+.container p .card-text {
+  color: black;
+}
