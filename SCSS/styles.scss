@@ -1,0 +1,266 @@
+// Variables globales
+$primary-color: black;
+$secondary-color: white;
+
+
+
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Generales
+.body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+// Para las imágenes
+.img-fluid {
+    max-width: 100%;
+}
+
+// Fondos y colores
+.bg-black {
+    background-color: $primary-color;
+    color: $secondary-color;
+}
+
+// Footer
+
+.footer {
+    background-color: $primary-color;
+    padding: 20px;
+}
+
+
+
+
+// HEADER
+.navbar {
+
+    background-color: $primary-color;
+    color: $secondary-color;
+
+    &-nav {
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    &-brand {
+        color: $secondary-color; 
+        &:focus,
+        &:hover {
+           
+            color: blue; 
+        }
+    }
+
+    .nav-link {
+       
+        color: $secondary-color; 
+        &:hover {
+            color: blue; 
+        }
+
+    }
+
+    .nav-link {
+        color: $secondary-color !important; 
+    }
+
+    .navbar-toggler {
+        border: 1px solid $secondary-color; 
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"
+            ); 
+    }
+}
+
+
+// Página de inicio
+
+.main {
+    padding: 40px;
+    text-align: justify;
+
+    h1 {
+        font-size: clamp(2rem, 5vw, 3rem);
+        text-align: center;
+    }
+
+    .img-larry {
+        width: 600px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+}
+
+// Página de Simbolos
+
+.main-img {
+    display: grid;
+    grid-gap: 20px;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+}
+
+.container {
+    h1 {
+        color: $secondary-color;
+    }
+
+    p {
+        color: $secondary-color;
+
+        .card-text {
+            color: $primary-color;
+        }
+    }
+}
+
+
+// Textos
+git
+.textos {
+    font-family: 'Arial', sans-serif;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+// Estilos para diferentes dispositivos, esto se tiene que aplicar para "tecnicas"
+
+// Desktop
+@media screen and (min-width: 1024px) {
+    .main-img {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        grid-gap: 20px;
+
+        .img-uno {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .img-dos {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .img-tres {
+            grid-column: 3;
+            grid-row: 1;
+        }
+
+        .img-cuatro {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .img-cinco {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+}
+
+// Tablet
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+    .main-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 3fr);
+        align-items: center;
+
+        .img-uno {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .img-dos {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .img-tres {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .img-cuatro {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .img-cinco {
+            grid-column: 1;
+            grid-row: 3;
+            justify-self: center;
+            align-self: center;
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width: 599px) {
+    .main-img {
+        display: block;
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+// Página de contacto
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.contact-form {
+    max-width: 500px;
+    padding: 20px;
+    background-color: $secondary-color;
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.btn-primary {
+    display: block;
+    width: auto;
+    margin-top: 10px;
+}
+
+// Página de Símbolos - Estilos adicionales
