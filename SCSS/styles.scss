@@ -95,11 +95,18 @@ $secondary-color: white;
     }
 
     .img-larry {
-        width: 600px;
-        height: auto;
-        object-fit: cover;
-        border-radius: 5px;
-    }
+        max-width: 100%; 
+        height: auto; 
+        object-fit: cover; 
+        border-radius: 5px; 
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1); 
+        transition: transform 0.3s ease; //
+      
+        &:hover {
+          transform: scale(1.05); 
+        }
+      }
+
 }
 
 // Página de Simbolos
@@ -109,8 +116,9 @@ $secondary-color: white;
     grid-gap: 20px;
 
     img {
-        width: 100%;
+        
         height: auto;
+        max-width: 100%;
         border-radius: 10px;
         object-fit: cover;
     }
@@ -147,6 +155,7 @@ git
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto auto;
         grid-gap: 20px;
+
 
         .img-uno {
             grid-column: 1;
