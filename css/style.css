@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: black;
 }
 
 .body {
-  margin: 0;
-  padding: 0;
   height: 100vh;
+  background-color: #212529; /* Fondo oscuro */
+  font-family: Arial, sans-serif; /* Fuente por defecto */
+  margin: 0;
+  padding: 20px;
 }
 
 .img-fluid {
@@ -57,7 +58,8 @@
 
 .main {
   padding: 40px;
-  text-align: justify;
+  text-align: center;
+  justify-content: center;
 }
 .main h1 {
   font-size: clamp(2rem, 5vw, 3rem);
@@ -246,6 +248,25 @@
     height: auto;
   }
 }
+.contenedor-noticias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 40px;
+  max-width: 1000px;
+  margin: 20px;
+}
+.contenedor-noticias .articulo, .contenedor-noticias .video {
+  margin-bottom: 20px;
+}
+.contenedor-noticias h1, .contenedor-noticias h2 {
+  margin-bottom: 20px;
+}
+.contenedor-noticias img {
+  width: 100%;
+}
+
 .centered-container {
   display: flex;
   justify-content: center;
