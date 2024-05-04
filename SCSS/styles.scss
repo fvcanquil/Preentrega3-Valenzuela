@@ -9,20 +9,25 @@ $color-fondo: #212529;
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-
+    
     
 }
 
 // Generales
-.body {
+body {
 
-    height: 100vh;  
-      background-color: #212529; /* Fondo oscuro */
+  margin: 0;
+  padding: 0;
+  height: 100vh; 
 
-      font-family: Arial, sans-serif; /* Fuente por defecto */
-      margin: 0;
-      padding: 20px;
+  h1 {
+
+
+    font-size: 34px;
+    font-weight: bold;
+  
+}
+
 }
 
 // Para las imágenes
@@ -40,7 +45,7 @@ $color-fondo: #212529;
 
 .footer {
     background-color: $primary-color;
-    padding: 20px;
+    padding: 0;
 }
 
 
@@ -100,8 +105,11 @@ $color-fondo: #212529;
 
 
     h1 {
-        font-size: clamp(2rem, 5vw, 3rem);
-        text-align: center;
+
+
+          font-size: 24px;
+          font-weight: bold;
+        
     }
 
     .img-larry {
@@ -133,15 +141,15 @@ $color-fondo: #212529;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px; // le agregue 10px
+    padding: 10px; 
 
     border: 1px solid $secondary-color;
     border-radius: 5px;
     background-color: $secondary-color;
     
     iframe {
-      width: 100%; // le modifique, estaba en auto.
-      height: 400px; // le modifique, estaba en auto.
+      width: 100%; 
+      height: 400px; 
       max-width: 100%;
     }
 
@@ -179,7 +187,7 @@ $color-fondo: #212529;
 
   // Medias Queries 
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
     // Estilos para dispositivos móviles
     .contenedor-videos {
       grid-template-columns: repeat(1, 1fr); // 1 columnas en lugar de 3 
@@ -191,7 +199,7 @@ $color-fondo: #212529;
     }
   }
   
-  @media (min-width: 601px) and (max-width: 992px) {
+  @media (min-width: 600px) and (max-width: 1023px) {
     // Estilos para tablets 
     .contenedor-videos {
       grid-template-columns: repeat(2, 1fr); // 3 columnas 
@@ -203,7 +211,7 @@ $color-fondo: #212529;
     }
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     // Estilos para computadoras de escritorio 
     .contenedor-videos {
       grid-template-columns: repeat(3, 1fr); // 4 columnas en lugar de 3 
@@ -350,31 +358,52 @@ $color-fondo: #212529;
 
 
 // Página de Noticias
-
 .contenedor-noticias {
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: $secondary-color;
-  padding: 40px;
-  max-width: 1000px;
-  margin: 20px;
-
-  .articulo, .video {
-    margin-bottom: 20px;
+  background-color: $color-fondo;
+  .contenedor {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Centra el contenedor */
+    padding: 20px; /* Padding para espaciado interno */
+    background-color: $secondary-color; /* Fondo blanco para el contenedor */
+    border: 2px solid $color-fondo; /* Borde gris oscuro */
+    border-radius: 8px; /* Bordes redondeados */
+    
+  }
+  
+    /* Estilo para las secciones de artículos */
+  .articulo {
+    margin-bottom: 30px; /* Espacio entre secciones */
+    border: 2px solid $secondary-color; /* Borde sólido de 2px de grosor, color gris oscuro */
+    border-radius: 8px; /* Bordes redondeados para suavizar el contenedor */
+    padding: 20px;
+  }
+  
+  /* Estilo para las imágenes */
+  .imagen-articulo {
+    width: 80%; /* Imágenes a tamaño completo */
+    height: auto; /* Mantener proporciones */
+    border-radius: 8px; /* Bordes redondeados */
+    
+  }
+  
+  a {
+    color: #007bff; /* Color azul para los enlaces */
+    text-decoration: none; /* Sin subrayado */
   }
 
-  h1, h2 {
-    margin-bottom: 20px;
-  }
+/* Estilo para enlaces */
+.contenedor a {
+  color: #007bff; /* Color azul para los enlaces */
+  text-decoration: none; /* Sin subrayado */
+}
 
-  img {
-    width: 100%;
-  }
+.contenedor a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
 
 }
+
 
 
 
