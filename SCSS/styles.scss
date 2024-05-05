@@ -43,6 +43,7 @@ body {
 .footer {
     background-color: $primary-color;
     padding: 0;
+    margin-bottom: 0%;
 }
 
 
@@ -92,20 +93,10 @@ body {
 
 // Página de inicio
 
-.main {
+.contenedor-noticias {
     padding: 40px;
     text-align: center;
     justify-content: center;
-
-
-
-    h1 {
-
-
-          font-size: 24px;
-          font-weight: bold;
-        
-    }
 
     .img-larry {
 
