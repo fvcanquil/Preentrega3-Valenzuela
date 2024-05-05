@@ -43,13 +43,10 @@ body h1 {
   color: blue;
 }
 .navbar .nav-link {
-  color: white;
+  color: white !important;
 }
 .navbar .nav-link:hover {
   color: blue;
-}
-.navbar .nav-link {
-  color: white !important;
 }
 .navbar .navbar-toggler {
   border: 1px solid white;
