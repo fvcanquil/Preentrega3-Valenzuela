@@ -68,12 +68,12 @@ body h1 {
   font-weight: bold;
 }
 .main .img-larry {
+  transition: transform 0.3s ease-in-out;
   max-width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 5px;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
 }
 .main .img-larry:hover {
   transform: scale(1.05);
@@ -114,6 +114,7 @@ body h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   background-color: #212529;
   color: white;
   padding: 20px;
@@ -271,11 +272,6 @@ body h1 {
   padding: 20px;
 }
 .contenedor-noticias .imagen-articulo {
-  width: 80%; /* Imágenes a tamaño completo */
-  height: auto; /* Mantener proporciones */
-  border-radius: 8px; /* Bordes redondeados */
-}
-.contenedor-noticias .imagen-articulo iframe {
   width: 80%; /* Imágenes a tamaño completo */
   height: auto; /* Mantener proporciones */
   border-radius: 8px; /* Bordes redondeados */
