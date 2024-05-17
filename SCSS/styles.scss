@@ -356,53 +356,56 @@ body {
 
 // Página de Noticias
 .contenedor-noticias {
-
   background-color: $color-fondo;
-  .contenedor {
-    max-width: 1200px; /* Ancho máximo del contenedor */
-    margin: 20px auto; /* Centra el contenedor */
-    padding: 20px; /* Padding para espaciado interno */
-    background-color: $secondary-color; /* Fondo blanco para el contenedor */
-    border: 2px solid $color-fondo; /* Borde gris oscuro */
-    border-radius: 8px; /* Bordes redondeados */
-    
-  }
-  
-    /* Estilo para las secciones de artículos */
-  .articulo {
-    margin-bottom: 30px; /* Espacio entre secciones */
-    border: 2px solid $secondary-color; /* Borde sólido de 2px de grosor, color gris oscuro */
-    border-radius: 8px; /* Bordes redondeados para suavizar el contenedor */
-    padding: 20px;
 
-    .iframe {
-      max-width: 100% 
-    }
+
+  
+  .contenedor {
+    max-width: 1200px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: $secondary-color; 
+    border: 2px solid $color-fondo; 
+    border-radius: 8px; 
+
+
   }
   
+  /* Estilo para las secciones de artículos */
+  .articulo {
+    margin-bottom: 30px; 
+    border: 2px solid $secondary-color; 
+    border-radius: 8px; 
+    padding: 20px;
+    overflow: hidden; 
+  }
+
+  .articulo iframe {
+    max-width: 100%; 
+  }
+
   /* Estilo para las imágenes */
   .imagen-articulo {
-    width: 80%; /* Imágenes a tamaño completo */
-    height: auto; /* Mantener proporciones */
-    border-radius: 8px; /* Bordes redondeados */
-    
+    width: 80%; 
+    height: auto; 
+    border-radius: 8px; 
   }
   
   a {
-    color: #007bff; /* Color azul para los enlaces */
-    text-decoration: none; /* Sin subrayado */
+    color: #007bff; 
+    text-decoration: none; 
   }
 
-/* Estilo para enlaces */
-.contenedor a {
-  color: #007bff; /* Color azul para los enlaces */
-  text-decoration: none; /* Sin subrayado */
-}
+  /* Estilo para enlaces */
+  .contenedor a {
+    color: #007bff; 
+    text-decoration: none; 
 
-.contenedor a:hover {
-  text-decoration: underline; /* Subrayado al pasar el mouse */
-}
+  .contenedor a:hover {
+    text-decoration: underline;
+  }
 
+}
 }
 
 
