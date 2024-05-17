@@ -374,6 +374,10 @@ body {
     border: 2px solid $secondary-color; /* Borde sólido de 2px de grosor, color gris oscuro */
     border-radius: 8px; /* Bordes redondeados para suavizar el contenedor */
     padding: 20px;
+
+    .iframe {
+      max-width: 100% 
+    }
   }
   
   /* Estilo para las imágenes */
